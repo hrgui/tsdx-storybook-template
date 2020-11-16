@@ -23,7 +23,7 @@ jobs:
           yarn install
           yarn test
           yarn build
-          yarn version --prerelease --preid "$git_branch-$git_hash"
+          yarn version --prerelease --preid "$git_branch-$git_hash" --no-git-version
         env:
           CI: true
       - name: Publish
