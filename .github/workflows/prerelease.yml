@@ -1,11 +1,11 @@
 name: Build
 on:
   push:
-    paths:
-      - '*.js'
-      - '*.jsx'
-      - '*.ts'
-      - '*.tsx'
+    # paths:
+    #   - '*.js'
+    #   - '*.jsx'
+    #   - '*.ts'
+    #   - '*.tsx'
 jobs:
   build:
     runs-on: ubuntu-latest
