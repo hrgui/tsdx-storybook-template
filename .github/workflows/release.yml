@@ -21,7 +21,7 @@ jobs:
           yarn test
           yarn build
           yarn version --new-version "$git_version"
-          git push origin HEAD
+          git push --tags
         env:
           CI: true
       - name: Publish
