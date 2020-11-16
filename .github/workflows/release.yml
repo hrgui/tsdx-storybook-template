@@ -20,7 +20,8 @@ jobs:
           yarn install
           yarn test
           yarn build
-          yarn version --new-version "$git_version" --no-git-version
+          yarn version --new-version "$git_version"
+          git push origin HEAD
         env:
           CI: true
       - name: Publish
@@ -28,6 +29,6 @@ jobs:
         with:
           node-version: 14.x
           registry-url: "https://npm.pkg.github.com"
-      - run: yarn publish --tag next
+      - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
