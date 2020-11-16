@@ -2,7 +2,7 @@
   "name": "@hrgui/tsdx-storybook-template",
   "author": "Enter your name here",
   "module": "dist/tsdx-storybook-template.esm.js",
-  "version": "0.1.1-master-3bc0cec.0",
+  "version": "0.1.1-master-f6372a2.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
